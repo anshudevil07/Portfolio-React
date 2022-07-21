@@ -4,8 +4,20 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: #212529;
+  --primary-red: #ef4035;
+  --primary-red-hover: #f33501;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+}
+
+a {
+  text-decoration: none !important;
 }
