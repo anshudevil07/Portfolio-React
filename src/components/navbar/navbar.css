@@ -2,6 +2,10 @@
   width: 16.25rem;
 }
 
+nav {
+  z-index: 2;
+}
+
 /*------ MENU LINKS -------*/
 nav a.nav-link {
   font-size: 0.8rem;
@@ -27,4 +31,10 @@ nav ul li {
 
 .navbar-nav li a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 13rem;
+  }
 }
