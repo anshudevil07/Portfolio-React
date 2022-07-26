@@ -5,6 +5,9 @@ import { loadFull } from 'tsparticles'
 const Particles = () => {
   const particleInit = async (main) => await loadFull(main)
   const particlesOptions = {
+    fullScreen: {
+      enable: false,
+    },
     particles: {
       color: {
         value: '#333',

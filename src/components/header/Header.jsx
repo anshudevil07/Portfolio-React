@@ -1,10 +1,12 @@
 import React from 'react'
+import Particles from './Particles'
 import Typed from 'react-typed'
 import './header.css'
 
 const Header = () => {
   return (
     <section className='header-wrapper'>
+      <Particles />
       <div className='main-info'>
         <h1>web development and website promotion</h1>
         <Typed
