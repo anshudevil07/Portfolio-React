@@ -1,10 +1,21 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import logo from './logo.png'
 import './navbar.css'
 
 const navbar = () => {
+  const navLinks = [
+    'home',
+    'about',
+    'services',
+    'experience',
+    'portfolio',
+    'testimonials',
+    'contacts',
+  ]
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-dark position-fixed w-100'>
       <div className='container'>
@@ -24,36 +35,55 @@ const navbar = () => {
         </button>
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav mx-auto'>
-            <li className='nav-item'>
-              <a className='nav-link' aria-current='page' href='#'>
-                home
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                about me
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                services
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                experience
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                portfolio
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                contacts
-              </a>
-            </li>
+            {navLinks.map((link, index) => (
+              <li className='nav-item'>
+                <Link
+                  smooth={true}
+                  offset={-100}
+                  to={
+                    link === index
+                      ? 'home'
+                        ? 'about'
+                          ? 'services'
+                            ? 'experience'
+                              ? 'portfolio'
+                                ? 'testimonials'
+                                  ? 'contacts'
+                                  : link
+                                : link
+                              : link
+                            : link
+                          : link
+                        : link
+                      : link
+                  }
+                >
+                  <NavLink
+                    className='nav-link'
+                    aria-current='page'
+                    to={
+                      link === index
+                        ? '/home'
+                          ? '/about'
+                            ? '/services'
+                              ? '/experience'
+                                ? '/portfolio'
+                                  ? '/testimonials'
+                                    ? '/contacts'
+                                    : link
+                                  : link
+                                : link
+                              : link
+                            : link
+                          : link
+                        : link
+                    }
+                  >
+                    {link}
+                  </NavLink>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

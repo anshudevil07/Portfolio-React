@@ -13,9 +13,15 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
+          <Route path='home' />
+          <Route path='about' />
+          <Route path='services' />
+          <Route path='experience' />
           <Route path='portfolio'>
             <Route path=':portfolioId' element={<PortfolioInfo />} />
           </Route>
+          <Route path='testimonials' />
+          <Route path='contacts' />
         </Route>
       </Routes>
     </BrowserRouter>
