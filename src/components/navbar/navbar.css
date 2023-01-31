@@ -1,5 +1,6 @@
 .logo {
-  width: 16.25rem;
+  width: 10.25rem;
+  font-stretch: expanded;
 }
 
 nav {
@@ -8,7 +9,7 @@ nav {
 
 /*------ MENU LINKS -------*/
 nav a.nav-link {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -29,12 +30,12 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
-.navbar-nav li a:hover {
+.navbar-nav li a:active:hover {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
 @media (max-width: 768px) {
   .logo {
-    width: 13rem;
+    width: 10rem;
   }
 }

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import logo from './logo.png'
+import logo from './logo.jpg'
 import './navbar.css'
 
 const navbar = () => {
@@ -13,8 +13,7 @@ const navbar = () => {
     'services',
     'experience',
     'portfolio',
-    'testimonials',
-    'contacts',
+   
   ]
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-dark position-fixed w-100'>
@@ -47,15 +46,13 @@ const navbar = () => {
                           ? 'services'
                             ? 'experience'
                               ? 'portfolio'
-                                ? 'testimonials'
-                                  ? 'contacts'
-                                  : link
+                               
                                 : link
                               : link
                             : link
                           : link
                         : link
-                      : link
+                      
                   }
                 >
                   <NavLink
@@ -68,15 +65,12 @@ const navbar = () => {
                             ? '/services'
                               ? '/experience'
                                 ? '/portfolio'
-                                  ? '/testimonials'
-                                    ? '/contacts'
-                                    : link
-                                  : link
+                                 : link
                                 : link
                               : link
                             : link
                           : link
-                        : link
+                       
                     }
                   >
                     {link}

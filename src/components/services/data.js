@@ -15,18 +15,5 @@ export const services = [
     title: 'Web Development',
     description: 'Your website will be build with a new proven technologies.',
   },
-  {
-    id: 3,
-    icon: faFacebookF,
-    title: 'Facebook ADS SMM',
-    description:
-      'Your potential clients will see your services or product on facebook.',
-  },
-  {
-    id: 4,
-    icon: faGoogle,
-    title: 'Google Adwords',
-    description:
-      'Your services or product will appear at the top of the Google search.',
-  },
+  
 ]

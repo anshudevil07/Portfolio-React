@@ -3,10 +3,11 @@
 }
 
 .profile-img {
-  width: 16rem;
+  width: 20rem;
   border-radius: 50%;
   padding: 0.3rem;
   border: 0.0625rem solid var(--primary-orange);
+  height: 80vh;
 }
 
 .photo-wrap {
@@ -17,4 +18,7 @@
 
 .about-heading {
   color: var(--primary-orange);
+}
+p{
+  font-size:x-large;
 }

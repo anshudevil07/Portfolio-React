@@ -10,7 +10,7 @@ const Services = () => {
       <div className='container'>
         <div className='row'>
           {services.map((item, key) => (
-            <div className='col-md-3 col-sm-6' key={key}>
+            <div className='col-md-6 col-sm-9' key={key}>
               <div className='box'>
                 <div className='circle'>
                   <FontAwesomeIcon className='icons' icon={item.icon} />
