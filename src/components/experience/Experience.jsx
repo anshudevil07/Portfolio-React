@@ -8,13 +8,13 @@ const Experience = () => {
       <div className='d-flex justify-content-center my-5'>
         <h1>experience</h1>
       </div>
-      <div className='container experience-wrapper'>
+      <div className='container experience-wrap'>
         {experience.map((item, key) => {
           if (item.id % 2 != 1) {
             return (
               <div className='timeline-block timeline-block-right' key={key}>
                 <div className='marker'></div>
-                <div className='timeline-content'>
+                <div className='timeline'>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
@@ -24,7 +24,7 @@ const Experience = () => {
             return (
               <div className='timeline-block timeline-block-left' key={key}>
                 <div className='marker'></div>
-                <div className='timeline-content'>
+                <div className='timeline'>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                 </div>

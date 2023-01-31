@@ -12,7 +12,7 @@ const navbar = () => {
     'about',
     'services',
     'experience',
-    'portfolio',
+  
    
   ]
   return (
@@ -45,9 +45,7 @@ const navbar = () => {
                         ? 'about'
                           ? 'services'
                             ? 'experience'
-                              ? 'portfolio'
-                               
-                                : link
+                              
                               : link
                             : link
                           : link
@@ -64,8 +62,7 @@ const navbar = () => {
                           ? '/about'
                             ? '/services'
                               ? '/experience'
-                                ? '/portfolio'
-                                 : link
+                               
                                 : link
                               : link
                             : link

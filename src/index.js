@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import App from './App'
-import PortfolioInfo from './components/portfolio/PortfolioInfo'
+
 
 import reportWebVitals from './reportWebVitals'
 
@@ -17,11 +17,8 @@ root.render(
           <Route path='about' />
           <Route path='services' />
           <Route path='experience' />
-          <Route path='portfolio'>
-            <Route path=':portfolioId' element={<PortfolioInfo />} />
-          </Route>
-          <Route path='testimonials' />
-          <Route path='contacts' />
+          
+          
         </Route>
       </Routes>
     </BrowserRouter>

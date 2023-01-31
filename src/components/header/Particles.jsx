@@ -10,15 +10,15 @@ const Particles = () => {
     },
     particles: {
       color: {
-        value: '#333',
+        value: '#444',
       },
 
       links: {
         color: '#f9ab00',
         distance: 130,
         enable: true,
-        opacity: 0.5,
-        width: 0.5,
+        opacity: 0.6,
+        width: 0.6,
       },
       move: {
         direction: 'none',
@@ -27,7 +27,7 @@ const Particles = () => {
           default: 'bounce',
         },
         random: true,
-        speed: 8,
+        speed: 7,
         straight: true,
       },
       number: {

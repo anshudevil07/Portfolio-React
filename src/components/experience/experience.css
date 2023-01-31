@@ -1,4 +1,4 @@
-.experience-wrapper {
+.experience-wrap {
   position: relative;
   padding: 3.125rem 0;
   overflow: hidden;
@@ -9,7 +9,7 @@
   color: var(--primary-orange);
 }
 
-.experience-wrapper::before {
+.experience-wrap::before {
   position: absolute;
   content: '';
   top: 0;
@@ -37,7 +37,7 @@
   direction: rtl;
 }
 
-.timeline-content {
+.timeline {
   width: 95%;
   padding: 0 0.9375rem;
   color: var(--primary-dark-grey);
@@ -54,7 +54,7 @@
   z-index: 1;
 }
 
-.timeline-content h3 {
+.timeline h3 {
   margin-top: 0.3125rem;
   color: var(--primary-red);
   font-weight: 900;
